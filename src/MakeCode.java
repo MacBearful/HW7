@@ -27,7 +27,7 @@ public class MakeCode {
 		try {
 			FileInputStream input = new FileInputStream(inFile);
 			int[] count = new int[CHAR_MAX];
-			for (int i = 0; i < count.length; i++) {
+			for (;;) {
 				int n = input.read();
 				if (n == -1)
 					break;
